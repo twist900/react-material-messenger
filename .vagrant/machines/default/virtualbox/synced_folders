@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/react-clean-start":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/react-clean-start","hostpath":"/home/georgy/Code/react-clean-start","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/georgy/Code/react-clean-start","disabled":false}}}

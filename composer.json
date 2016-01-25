@@ -1,0 +1,13 @@
+{
+    "name": "georgy/react-clean-start",
+    "authors": [
+        {
+            "name": "Georgy Shabunin",
+            "email": "georgy.shabunin@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "laravel/homestead": "~3.0"
+    }
+}
