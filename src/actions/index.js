@@ -3,6 +3,17 @@ import Firebase from 'firebase';
 
 class Actions {
 
+    constructor(){
+        this.generateActions(
+            'channelsReceived',
+            'channelsFailed',
+            'messagesReceived',
+            'messagesFailed',
+            'channelOpened',
+            'messagesLoading'
+        );
+    }
+
     login(){
         return (dispatch) => {
             var firebaseRef = new Firebase('https://ohmyreactstack.firebaseio.com');
