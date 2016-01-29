@@ -12,8 +12,8 @@ class Message extends React.Component{
     render(){
         return(
             <ListItem
-                leftAvatar={<Avatar src="http://www.gravatar.com/avatar/3b3be63a4c2a439b013787725dfce802?d=identicon" />}>
-                {this.props.message}
+                leftAvatar={<Avatar src={this.props.message.profilePic} />}>
+                {this.props.message.message}
             </ListItem>
         );
     }
