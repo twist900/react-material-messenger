@@ -19,6 +19,9 @@ class MessageList extends React.Component {
         };
     }
 
+
+
+
     static getStores(){
         return [ChatStore];
     }

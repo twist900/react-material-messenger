@@ -11,7 +11,19 @@ class ChannelList extends React.Component {
 
     constructor(props){
         super(props);
-        ChatStore.getChannels();
+
+    }
+
+    componentDidMount(){
+        this.selectedChannel = this.props.params.channel; //from router
+        ChatStore.getChannels(this.selectedChannel);
+    }
+
+    componentWillReceiveProps(nextProps){
+        if(this.selectedChannel != nextProps.params.channel){
+            this.selectedChannel = nextProps.params.channel;
+            ChatStore.getChannels(this.selectedChannel);
+        }
     }
 
     static getStores(){
