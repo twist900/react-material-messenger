@@ -18,7 +18,7 @@ class Actions {
         );
     }
 
-    login(){
+    login(router){
         return (dispatch) => {
             var firebaseRef = new Firebase('https://ohmyreactstack.firebaseio.com');
             firebaseRef.authWithOAuthPopup("google", (error, user) => {
@@ -27,6 +27,8 @@ class Actions {
                 }
 
                 dispatch(user);
+
+                router.transitionTo('/chat');
             });
         }
     }
